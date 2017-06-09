@@ -2,8 +2,8 @@
 
 Boilerplate linking [electron](http://electron.atom.io/) with [create-react-app](https://github.com/facebookincubator/create-react-app).
 
-This boilerplate only adds one dependency - `react-router-dom` - to the list of dependencies coming with create-react-app. It also removes files related to
-create-react-app's progressive-web-app capabilities like `registerServiceWorker.js` and `manifesto.json`. Apart from that it's just create-react-app.
+This boilerplate adds only one dependency - `react-router-dom` - to the list of dependencies coming with create-react-app. It also removes files related to
+create-react-app's progressive-web-app capabilities like `registerServiceWorker.js` and `manifesto.json`. Apart from that it's just create-react-app fused with electron.
 
 ## Dependencies
 
@@ -35,3 +35,5 @@ yarn start
 
 Copyright 2017, Matthias Munder.  
 Licensed under the [MIT license](./LICENSE).
+
+[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
