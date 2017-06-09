@@ -1,0 +1,11 @@
+.link-container {
+  margin-top: 50px;
+}
+
+.link {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 3px;
+  color: black;
+  text-decoration: none;
+}
