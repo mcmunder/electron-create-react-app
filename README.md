@@ -1,34 +1,34 @@
 # electron-create-react-app
 
 Boilerplate linking [electron](http://electron.atom.io/) with [create-react-app](https://github.com/facebookincubator/create-react-app).
+This boilerplate adds only one dependency - `react-router-dom` - to the list of
+dependencies coming with create-react-app. Progressive web app related files
+were removed.
 
-This boilerplate adds only one dependency - `react-router-dom` - to the list of dependencies coming with create-react-app. It also removes files related to
-create-react-app's progressive-web-app capabilities like `registerServiceWorker.js` and `manifesto.json`. Apart from that it's just create-react-app fused with electron.
-
-## Dependencies
-
-Make sure you have node.js version 7.6.0 or later installed! `main.js` is written with async/await syntax which is only supported from that version of node onwards.
-
-Furthermore, make sure you have [yarn](https://yarnpkg.com/en/) installed globally. __The project currently only works properly with yarn.__
-```bash
-npm install -g yarn
-```
+__Many things were shamelessly copied from
+[here](https://github.com/kitze/react-electron-example). See [this article](https://medium.com/@kitze/%EF%B8%8F-from-react-to-an-electron-app-ready-for-production-a0468ecb1da3)
+for a very good background information.__
 
 ## Usage
 
+Run tests:
+```
+yarn test
+```
+
 Run in dev mode:
 ```bash
-yarn run dev
+yarn electron-dev
 ```
 
 Build:
 ```bash
-yarn run build
+yarn build
 ```
 
-Start in production mode:
-```bash
-yarn start
+Package:
+```
+yarn electron-pack
 ```
 
 ## Copyright and license

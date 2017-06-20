@@ -1,26 +1,39 @@
 {
   "name": "electron-create-react-app",
+  "description": "Boilerplate linking electron and create-react-app",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "mcmunder",
+    "email": "matthiasmunder@gmail.com",
+    "url": "https://mcmunder.de"
+  },
   "dependencies": {
-    "cross-env": "^5.0.1",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
+    "cross-env": "5.0.1",
+    "electron-is-dev": "0.1.2",
+    "react": "15.6.1",
+    "react-dom": "15.6.1",
     "react-router-dom": "^4.1.1"
   },
   "devDependencies": {
-    "chalk": "^1.1.3",
-    "electron": "^1.6.10",
-    "electron-devtools-installer": "^2.2.0",
-    "react-scripts": "1.0.7"
+    "concurrently": "3.4.0",
+    "electron": "1.6.11",
+    "electron-builder": "19.5.1",
+    "react-scripts": "1.0.7",
+    "wait-on": "2.0.2"
+  },
+  "main": "public/electron.js",
+  "homepage": "./",
+  "build": {
+    "appId": "com.example.electron-create-react-app"
   },
   "scripts": {
-    "debug-main": "node_modules/.bin/electron-inspector",
-    "dev": "cross-env NODE_ENV=development ./node_modules/.bin/electron ./main.js",
-    "start": "cross-env NODE_ENV=production ./node_modules/.bin/electron ./main.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "homepage": "./"
+    "eject": "react-scripts eject",
+    "electron-dev": "concurrently \"cross-env BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electron .\"",
+    "electron-pack": "build --em.main=build/electron.js",
+    "preelectron-pack": "yarn build"
+  }
 }
