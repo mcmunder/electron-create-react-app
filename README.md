@@ -4,7 +4,7 @@ Boilerplate linking [electron](http://electron.atom.io/) with [create-react-app]
 
 __Many things were shamelessly copied from
 [here](https://github.com/kitze/react-electron-example). See [this article](https://medium.com/@kitze/%EF%B8%8F-from-react-to-an-electron-app-ready-for-production-a0468ecb1da3)
-for a very good background information.__
+for very good background information.__
 
 ## Usage
 
